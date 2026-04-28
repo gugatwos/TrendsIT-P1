@@ -3,124 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio profissional de desenvolvedor web e estudante de tecnologia." />
-  <title>Meu Portfólio Profissional</title>
+
+  <title>Meu Portfólio | Desenvolvedor em Formação</title>
+
+  <meta
+    name="description"
+    content="Portfólio profissional desenvolvido com HTML5 e CSS3, apresentando trajetória, habilidades e projetos na área de tecnologia."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="cabecalho">
-    <nav class="navegacao" aria-label="Menu principal">
-      <a href="#sobre">Sobre</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#inicio" class="logo">Portfólio</a>
+
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero-conteudo">
-        <img src="assets/perfil.jpg" alt="Foto de perfil do autor do portfólio" class="foto-perfil" />
+      <div class="hero-texto">
+        <span class="selo">Desenvolvedor em formação</span>
 
-        <p class="tag">Desenvolvedor em formação</p>
+        <h1>Construindo minha identidade digital na tecnologia</h1>
 
-        <h1><h1>Olá, eu sou Gustavo, estudante de Ciência de Dados</h1></h1>
-
-        <p class="descricao">
-          Estou construindo minha trajetória na tecnologia, aprendendo HTML, CSS,
-          Git, GitHub e boas práticas para criar projetos úteis, organizados e responsivos.
+        <p>
+          Sou estudante da área de tecnologia e estou desenvolvendo projetos web
+          com foco em estrutura semântica, responsividade, organização de código
+          e boas práticas de versionamento com Git e GitHub.
         </p>
 
-        <div class="botoes-hero">
-          <a href="#projetos" class="botao principal">Ver projetos</a>
-          <a href="#contato" class="botao secundario">Entrar em contato</a>
+        <div class="hero-botoes">
+          <a href="#projetos" class="botao botao-primario">Ver projetos</a>
+          <a href="#contato" class="botao botao-secundario">Falar comigo</a>
+        </div>
+      </div>
+
+      <div class="hero-foto">
+        <div class="moldura-foto">
+          <img src="img/foto-perfil.jpg" alt="Foto de perfil do autor do portfólio" />
         </div>
       </div>
     </section>
 
-    <section class="secao" id="sobre">
-      <h2>Sobre mim</h2>
+    <section class="secao sobre" id="sobre">
+      <div class="titulo-secao">
+        <span>Sobre</span>
+        <h2>Quem sou eu</h2>
+      </div>
 
-      <p>
-        Sou estudante na área de tecnologia e estou desenvolvendo meus primeiros
-        projetos web com foco em estrutura semântica, responsividade, organização
-        de código e publicação no GitHub.
-      </p>
+      <div class="sobre-conteudo">
+        <p>
+          Estou em processo de formação como desenvolvedor, explorando os fundamentos
+          da web por meio de HTML5, CSS3, responsividade e publicação de projetos.
+          Este portfólio representa meu primeiro marco de presença profissional online.
+        </p>
 
-      <p>
-        Este portfólio foi criado como parte do Projeto 1 da Fase 1, com o objetivo
-        de apresentar minha evolução, minhas habilidades iniciais e meus projetos.
-      </p>
+        <p>
+          Meu objetivo é transformar aprendizado em prática, criando projetos simples,
+          funcionais e bem documentados, capazes de demonstrar evolução técnica,
+          cuidado visual e organização no desenvolvimento.
+        </p>
+      </div>
     </section>
 
     <section class="secao" id="habilidades">
-      <h2>Habilidades</h2>
+      <div class="titulo-secao">
+        <span>Competências</span>
+        <h2>Habilidades em desenvolvimento</h2>
+      </div>
 
-      <div class="grade-habilidades">
-        <article class="card">
+      <div class="grid habilidades-grid">
+        <article class="card habilidade">
           <h3>HTML5</h3>
-          <p>Estruturação semântica de páginas web.</p>
+          <p>Criação de estruturas semânticas, acessíveis e organizadas.</p>
         </article>
 
-        <article class="card">
+        <article class="card habilidade">
           <h3>CSS3</h3>
-          <p>Estilização, cores, espaçamentos, Flexbox e responsividade.</p>
+          <p>Estilização visual, responsividade, Flexbox, Grid e identidade visual.</p>
         </article>
 
-        <article class="card">
+        <article class="card habilidade">
           <h3>Git e GitHub</h3>
-          <p>Versionamento de código, commits e publicação de projetos.</p>
+          <p>Versionamento, commits, repositórios remotos e publicação de projetos.</p>
         </article>
 
-        <article class="card">
-          <h3>Design Responsivo</h3>
-          <p>Criação de páginas adaptadas para celular, tablet e computador.</p>
+        <article class="card habilidade">
+          <h3>Web Design</h3>
+          <p>Organização visual, contraste, hierarquia e experiência do usuário.</p>
         </article>
       </div>
     </section>
 
     <section class="secao" id="projetos">
-      <h2>Projetos</h2>
+      <div class="titulo-secao">
+        <span>Portfólio</span>
+        <h2>Projetos desenvolvidos</h2>
+      </div>
 
-      <div class="grade-projetos">
-        <article class="card projeto">
-          <h3>Projeto 1: Portfólio Profissional</h3>
-          <p>
-            Site estático responsivo desenvolvido com HTML5 e CSS3 para apresentar
-            minha identidade profissional, habilidades e projetos.
-          </p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Ver repositório</a>
+      <div class="grid projetos-grid">
+        <article class="card projeto-card">
+          <div class="projeto-imagem placeholder">
+            <span>P1</span>
+          </div>
+
+          <div class="projeto-info">
+            <h3>Meu Portfólio Profissional</h3>
+
+            <p>
+              Site estático responsivo desenvolvido como parte do Projeto 1 da Fase 1,
+              com foco em HTML5, CSS3, semântica, responsividade e GitHub Pages.
+            </p>
+
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>GitHub Pages</li>
+            </ul>
+
+            <a href="https://github.com/gugatwos/TrendsIT-P1" target="_blank" rel="noopener noreferrer">
+              Ver repositório
+            </a>
+          </div>
         </article>
 
-        <article class="card projeto">
-          <h3>Projeto futuro: BioLink Pro</h3>
-          <p>
-            Página de links personalizada para reunir redes sociais, portfólio e
-            canais de contato em uma única vitrine digital.
-          </p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Em breve</a>
+        <article class="card projeto-card">
+          <div class="projeto-imagem placeholder secundario">
+            <span>P2</span>
+          </div>
+
+          <div class="projeto-info">
+            <h3>BioLink Pro</h3>
+
+            <p>
+              Próximo projeto da trilha, voltado para a criação de uma vitrine digital
+              com links personalizados, identidade visual e foco em navegação mobile.
+            </p>
+
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Mobile First</li>
+            </ul>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Em desenvolvimento
+            </a>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="secao contato" id="contato">
-      <h2>Contato</h2>
+      <div class="titulo-secao">
+        <span>Contato</span>
+        <h2>Vamos conversar?</h2>
+      </div>
 
       <p>
-        Você pode acompanhar minha evolução profissional pelos canais abaixo.
+        Estou construindo minha trajetória na tecnologia e aberto a conexões,
+        aprendizados e oportunidades.
       </p>
 
-      <div class="links-contato">
-        <a href="gugatwos@gemail.com">E-mail</a>
+      <div class="contato-links">
+        <a href="mailto:gugatwos@gmail.com">E-mail</a>
+        <a href="https://github.com/gugatwos" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </section>
   </main>
 
-  <footer class="rodape">
-    <p>© 2026 - Meu Portfólio Profissional. Desenvolvido com HTML e CSS.</p>
+  <footer class="footer">
+    <p>© 2026 - Portfólio Profissional Interativo. Desenvolvido com HTML5 e CSS3.</p>
   </footer>
 </body>
 </html>
