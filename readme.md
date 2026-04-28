@@ -31,5 +31,5 @@ projeto-1-portfolio/
 ├── index.html
 ├── style.css
 ├── README.md
-└── assets/
+└── img/
     └── perfil.jpg
